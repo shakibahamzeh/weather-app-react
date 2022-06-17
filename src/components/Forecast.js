@@ -9,8 +9,8 @@ const Forecast = ({title,items}) => {
         </div>
         <hr className='my-2'/>
         <div className='flex items-center justify-between text-white'>
-         {items.map(item =>
-                 <div className='flex flex-col items-center justify-center'>
+         {items.map((item,index) =>
+                 <div className='flex flex-col items-center justify-center' key={index}>
                     <p className='font-light text-sm'>
                      {item.title}
                     </p>

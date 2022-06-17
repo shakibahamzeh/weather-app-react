@@ -29,7 +29,7 @@ function App() {
  }
 
   return (
-    <div className={`mx-auto max-w-screen-md m-4 py-5 px-32 bg-gradient-to-br h-fit shodow-xl shadow-gray-400 ${formatBackground()}` }>
+    <div className={`mx-auto max-w-screen-sm m-4 py-5 sm:px-24 px-8 bg-gradient-to-br h-fit shodow-xl shadow-gray-400 ${formatBackground()}` }>
       <TopButtons setQuery={setQuery}/>
       <Inputs units={units} setQuery={setQuery} setUnits={setUnits}/>
       {weather && (

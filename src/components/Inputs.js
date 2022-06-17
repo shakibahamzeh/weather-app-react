@@ -33,18 +33,18 @@ const Inputs = ({setQuery,setUnits,units}) => {
              onChange={(e)=> setCity(e.target.value)}
              type="text"
              placeholder='Search for city ...'
-             className='text-xl font-light p-2 focus:outline-none w-full capitalize placeholder:lowercase'
+             className='sm:text-xl text-sm font-light p-2 focus:outline-none w-full capitalize placeholder:lowercase'
             />
             <UilSearch size={25} className="text-white cursor-pointer transition ease-out hover:scale-125 " onClick={clickSearchHandler}/>
             <UilLocationPoint size={25} className="text-white cursor-pointer transition ease-out hover:scale-125" onClick={clickLocationHandler}/>
         </div>
         <div className='flex items-center justify-center w-1/4'>
-            <button name='metric' className='text-xl text-white font-light transition ease-out hover:scale-125'>
-              <UilCelsius size={20} onClick={clickUnitChange}/>
+            <button name='metric' className='text-xl text-white font-light transition ease-out hover:scale-125' onClick={clickUnitChange}>
+              <UilCelsius size={20} />
             </button>
             <p className='text-white text-xl mx-2'>|</p>
-            <button name='imperial' className='text-xl text-white font-light transition ease-out hover:scale-125'>
-              <UilFahrenheit size={20} onClick={clickUnitChange}/>
+            <button name='imperial' className='text-xl text-white font-light transition ease-out hover:scale-125' onClick={clickUnitChange}>
+              <UilFahrenheit size={20} />
             </button>
         </div>
     </div>

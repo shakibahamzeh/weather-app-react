@@ -9,9 +9,9 @@ const TopButtons = ({setQuery}) => {
         {id:4,title:"Toronto"}
     ];
   return (
-    <div className='flex item-center justify-around my-6'>
+    <div className='flex item-center md:justify-around justify-between my-6'>
         {
-            cities.map((city)=> <button key={city.id} className='text-white text-lg font-medium transition ease-out hover:scale-125' onClick={()=>setQuery({q:city.title})}>{city.title}</button>)
+            cities.map((city)=> <button key={city.id} className='text-white sm:text-lg text-sm sm:font-medium font-normal  transition ease-out hover:scale-125 mx-1' onClick={()=>setQuery({q:city.title})}>{city.title}</button>)
         }
     </div>
   )
